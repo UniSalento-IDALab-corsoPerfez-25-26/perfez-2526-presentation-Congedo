@@ -46,6 +46,7 @@
   tr:last-child td { border-bottom: 0; }
   .repo { font-family: ui-monospace, Consolas, monospace; font-size: .9rem; word-break: break-all; }
   .note { border-left: 4px solid var(--accent); background: var(--accent-soft); padding: 12px 16px; border-radius: 0 8px 8px 0; }
+  .player { width: 100%; height: auto; display: block; border-radius: 12px; background: #0f172a; }
   .video { aspect-ratio: 16 / 9; background: #0f172a; color: #94a3b8; border-radius: 12px; display: grid; place-items: center; text-align: center; padding: 16px; }
   .team { display: flex; gap: 16px; align-items: center; }
   .avatar { width: 64px; height: 64px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; font-size: 1.4rem; font-weight: 700; flex: none; }
@@ -139,7 +140,11 @@
 
 <section id="video">
   <h2>Video</h2>
-  <div class="video">Video dimostrativo in preparazione</div>
+  <p class="lead">Test automatici e replay delle prove registrate, prima delle prove su Raspberry. Il video non contiene immagini del volto: mostra le misure registrate fotogramma per fotogramma, rielaborate con la logica attuale del dispositivo. Nella prova 6 le soglie standard non riconoscono gli occhi chiusi; tarate sul guidatore, l'allarme scatta 1,2 s dopo la chiusura.</p>
+  <video class="player" controls preload="metadata" src="media/smartbox_demo.webm">
+    Il browser non riproduce il video: <a href="media/smartbox_demo.webm">scaricalo qui</a>.
+  </video>
+  <p style="color:var(--muted);font-size:.9rem">Generato da <code>tools/make_video.py</code> di questo repository a partire dai dati delle prove e dal codice del <a href="https://github.com/UniSalento-IDALab-corsoPerfez-25-26/perfez-2526-smartbox-edge-Congedo">repository edge</a>. La taratura è valutata sulla stessa registrazione (verifica ottimistica).</p>
 </section>
 
 <section id="team">

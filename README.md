@@ -49,6 +49,8 @@ Pagina web del progetto pubblicata con GitHub Pages: **https://unisalento-idalab
 |---|---|
 | `index.html` | La pagina (HTML e CSS in un solo file, senza librerie esterne) |
 | `docs/architettura.svg` | Schema dell'architettura, lo stesso dei README |
+| `media/smartbox_demo.webm` | Video dimostrativo (101 s): test automatici e replay delle prove registrate, senza immagini del volto |
+| `tools/make_video.py` | Genera il video: `python tools/make_video.py <repository edge> <cartella data delle prove> media/smartbox_demo.webm` |
 
 Pubblicazione: *Settings → Pages → Deploy from a branch → `main` / root*.
 
